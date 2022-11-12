@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29sp"
+        android:layout_marginTop="40sp"
+        android:fontFamily="@font/sp_bolt"
+        android:text="Register"
+        android:textColor="#1D68FF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="359sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/sp_medium"
+        android:hint="Full Name"
+        android:paddingLeft="26sp"
+        android:textColorHint="#801D68FF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <EditText
+        android:id="@+id/edit_login"
+        android:layout_width="359sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/sp_medium"
+        android:hint="Enter Email / Phone Number"
+        android:paddingLeft="26sp"
+        android:textColorHint="#801D68FF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_password"
+        android:layout_width="359sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="17sp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#1D68FF"
+        android:background="@drawable/edit_text_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_login"
+        android:textColorHint="#801D68FF">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="26sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/sp_medium"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_style"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password"
+        android:layout_width="359sp"
+        android:layout_height="55sp"
+        android:layout_marginTop="17sp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#1D68FF"
+        android:background="@drawable/edit_text_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password"
+        android:textColorHint="#801D68FF">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="26sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/sp_medium"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_style"
+            tools:ignore="RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="38sp"
+        android:layout_height="34sp"
+        android:layout_marginStart="31sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/checkbox_style"
+        android:button="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Password"
+        android:textColor="#1D68FF"
+        android:textSize="12sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_style"
+        android:enabled="false"
+        android:fontFamily="@font/sp_medium"
+        android:onClick="Register"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#1D68FF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23sp"
+        android:text="OR"
+        android:textColor="#801D68FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28sp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/sp_medium"
+        android:text="google"
+        android:textColor="#1D68FF"
+        android:textSize="14sp"
+        android:layout_marginStart="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28sp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="@font/sp_medium"
+        android:text="facebook"
+        android:textColor="#1D68FF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30sp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:fontFamily="@font/sp_medium"
+        android:onClick="Login"
+        android:text="@string/lets_login"
+        android:textColor="#1D68FF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
