@@ -87,16 +87,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_password"
         android:textColorHint="#801D68FF">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@id/edit_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingStart="26sp"
-            android:textSize="14sp"
+            android:background="@drawable/edit_text_style"
             android:fontFamily="@font/sp_medium"
             android:hint="Confirm password"
             android:inputType="textPassword"
-            android:background="@drawable/edit_text_style"
+            android:paddingStart="26sp"
+            android:textColorHint="#546E7A"
+            android:textSize="14sp"
             tools:ignore="RtlSymmetry" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,7 +111,8 @@
         android:background="@drawable/checkbox_style"
         android:button="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -127,8 +130,7 @@
         android:layout_width="360sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@drawable/button_style"
-        android:enabled="false"
+        android:background="@drawable/edit_text_style"
         android:fontFamily="@font/sp_medium"
         android:onClick="Register"
         android:text="Register"
@@ -155,13 +157,13 @@
         android:id="@+id/button2"
         android:layout_width="170sp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28sp"
         android:layout_marginTop="28sp"
         android:background="@drawable/edit_text_style"
         android:fontFamily="@font/sp_medium"
         android:text="google"
-        android:textColor="#1D68FF"
+        android:textColor="#304FFE"
         android:textSize="14sp"
-        android:layout_marginStart="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -191,5 +193,6 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

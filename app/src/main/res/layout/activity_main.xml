@@ -71,7 +71,8 @@
         android:textColor="#1D68FF"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_password"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -82,7 +83,8 @@
         android:background="@drawable/checkbox_style"
         android:button="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_password"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,8 +102,7 @@
         android:layout_width="360sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@drawable/button_style"
-        android:enabled="false"
+        android:background="@drawable/edit_text_style"
         android:fontFamily="@font/sp_medium"
         android:text="Login"
         android:textAllCaps="false"
@@ -163,5 +164,6 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
